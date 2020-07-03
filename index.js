@@ -3,35 +3,35 @@ $(function(){
   var data = [
   {
     "requestId": 1,
-    "projectname": "Proj-1",
-    "projectmanager": "Man-1",
+    "projectName": "Proj-1",
+    "projectManager": "Man-1",
     "resources":2,
     "status":"open",
     "poc":"HR-1",
-    "hiring-status":"completed",
-    "hr-comments":"ok",
+    "hiringStatus":"completed",
+    "hrComments":"ok",
     "actions":"done"
   },
   {
     "requestId": 2,
-    "projectname": "Proj-2",
-    "projectmanager": "Man-2",
+    "projectName": "Proj-2",
+    "projectManager": "Man-2",
     "resources":10,
     "status":"open",
     "poc":"HR-2",
-    "hiring-status":"completed",
-    "hr-comments":"ok",
+    "hiringStatus":"completed",
+    "hrComments":"ok",
     "actions":"done"
   },
   {
     "requestId": 3,
-    "projectname": "Proj-3",
-    "projectmanager": "Man-3",
+    "projectName": "Proj-3",
+    "projectManager": "Man-3",
     "resources":50,
     "status":"open",
     "poc":"HR-3",
-    "hiring-status":"completed",
-    "hr-comments":"ok",
+    "hiringStatus":"completed",
+    "hrComments":"ok",
     "actions":"done"
   }
 ];
@@ -68,13 +68,13 @@ $(function(){
     $("table tbody").append(`
         <tr class="tablerow">
           <td>${rowData["requestId"]}</td>
-          <td>${rowData["projectname"]}</td>
-          <td>${rowData["projectmanager"]}</td>
+          <td>${rowData["projectName"]}</td>
+          <td>${rowData["projectManager"]}</td>
           <td>${rowData["resources"]}</td>
           <td>${rowData["status"]}</td>
           <td>${rowData["poc"]}</td>
-          <td>${rowData["hiring-status"]}</td>
-          <td>${rowData["hr-comments"]}</td>
+          <td>${rowData["hiringStatus"]}</td>
+          <td>${rowData["hrComments"]}</td>
           <td id="${rowData["requestId"]}" class="edit-action"><input type="button" value="Edit"></td>
         </tr>
       `);
