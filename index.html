@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+​
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+​
+<body>
+​
+  <!-- Login Module -->
+
+  <div class="login-module module" style="margin: 50px">
+    <h3 style="text-align: center;">APPLICATION TITLE</h3>
+    <div>
+      <form id="loginForm">
+      <br>
+      <h4 style="text-align: center; font-size: 18px;">LOGIN TO CONTINUE</h4>
+      <br>
+      <input type="text" name="username" placeholder="Username" class="login" id="username">
+      <br>
+      <br>
+      <input type="password" name="password" placeholder="Password" class="login" id="password">
+      <br>
+      <br>
+      <button style="border-radius: 15px;" id="loginButton">Login</button>
+      <br>
+      <br>
+    </form>
+      
+    </div>
+​
+  </div>
+
+
+  
+​
+  <!-- Details Module -->
+  <div class="details-module module" style="background-color:  #d1e0e0;" >
+            <div class="details-content col-12 col-sm-6" style="padding-left: 50px;">
+                <label class="label">Project Name</label>
+                <label>:Project 1</label><br>
+                <label class="label">Project Manager</label>
+                <label>:Project Manager 1</label><br>
+                <label class="label">Number of Resources</label>
+                <label>:14</label><br>
+                <label class="label">Designation</label>
+                <label>:xyz</label><br>
+                <label class="label">Status</label>
+                <label>:Open</label><br>
+                <label class="label">Minimum Experience</label>
+                <label>:2 Years & 3 Months</label><br>
+                <label class="label">Maximum Experience</label>
+                <label>:6 Years & 3 Months</label><br>
+                <label class="label">Type</label>
+                <label>:New</label><br>
+            </div>
+            <div class="details-content col-12 col-sm-6">
+                <label class="label">Required Skills</label>
+                <label>:Full Stack Developer</label><br>
+                <label class="label">Duration</label>
+                <label>:1 Year & 2 Months</label><br>
+                <label class="label">Probability of Conversion</label>
+                <label>:100%</label><br>
+                <label class="label">Salary Range</label>
+                <label>:25K Min. & 50K Max.</label><br><br>
+                <label class="label text-info">Hiring Team Accessible Fields:</label><br>
+                <label class="label">Point of Contact(POC)</label>
+                <label>:ABC</label><br>
+                <label class="label">Hiring Status</label>
+                <label>:ABZ</label><br>
+                <label class="label">HR Comments</label>
+                <label>:NO comments</label><br>
+            </div>
+        </div>
+  <!-- Form Module -->
+  <div class="form-module module">
+  <form class="form-container containers" style="background-color:  #b3f0ff;margin-left: 20px">
+    <br>
+    <br>
+            <div class="row">
+                <div class="inner-form col-sm-6" style="padding-left: 20px;">
+                    
+                        <div class="form-group">
+                            <label for="projectname" class="label">Project Name</label>
+                            : <select id="projectname" class="form-input col-6">
+                                <option value=""></option>
+                                <option value="project1">Project 1</option>
+                                <option value="project2">Project 2</option>
+                                <option value="project3">Project 3</option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="projectmanager" class="label">Project Manager</label>
+                            : <input type="text" name="projectmanager" id="projectmanager" class="form-input col-6">
+                        </div>
+                        <div class="form-group">
+                            <label for="resources" class="label">No. of Resources</label>
+                            : <input type="number" name="resources" id="resources" class="form-input col-6">
+                        </div>
+                        <div class="form-group">
+                            <label for="designation" class="label">Designation</label>
+                            : <input type="text" name="designation" id="designation" class="form-input col-6">
+                        </div>
+                        <div class="form-group">
+                            <label for="status" class="label">Status</label>
+                            : <select id="status" class="form-input col-6">
+                                <option value="open">Open</option>
+                                <option value="project1">New </option>
+                              </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="min-experience" class="label">Minimum Experience</label>
+                            : <input type="text" name="min-experience" id="min-experience" class="form-input col-2"> years
+                            <input type="text" name="min-experience" id="min-experience" class="form-input col-2"> months
+                        </div>
+                        <div class="form-group">
+                            <label for="max-experience" class="label">Maximum Experience</label>
+                            : <input type="text" name="max-experience" id="max-experience" class="form-input col-2"> years
+                            <input type="text" name="max-experience" id="max-experience" class="form-input col-2"> months
+                        </div>
+                        <div class="form-group">
+                            <label for="type" class="label">Status</label>
+                            : <select id="type" class="form-input col-6">
+                                <option value=""></option>
+                                <option value="New">New</option>
+                                <option value="replacement">Replacement</option>
+                              </select>
+                        </div>
+                </div>
+
+                <div class="inner-form col-sm-6" style="padding-right: 20px;">
+                    <div class="form-group">
+                            <label for="skills" class="label">Required Skills</label>
+                            : <input type="text" name="skills" id="skills" class="form-input col-6">
+                    </div>
+                    <div class="form-group">
+                            <label for="duration" class="label">Duration</label>
+                            : <input type="text" name="duration" id="duration" class="form-input col-2"> years
+                            <input type="text" name="duration" id="duration" class="form-input col-2"> months
+                    </div>
+                    <div class="form-group">
+                            <label for="conversion" class="label">Probability of conversion</label>
+                            : <input type="text" name="conversion" id="conversion" class="form-input col-6">
+                    </div>
+                    <div class="form-group">
+                            <label for="salary" class="label">Salary Range</label>
+                            : <input type="text" name="salary" id="salary" class="form-input col-2"> min
+                             <input type="text" name="salary" id="salary" class="form-input col-2"> max
+                    </div>
+                    <label class="label text-info">Hiring Team Accessible Fields:</label><br>
+                    <div class="form-group">
+                            <label for="poc" class="label">Point of Contact</label>
+                            : <input type="text" name="poc" id="poc" class="form-input col-6">
+                    </div>
+                    <div class="form-group">
+                            <label for="hiring-status" class="label">Hirirng Status</label>
+                            : <input type="text" name="hiring-status" id="hiring-status" class="form-input col-6">
+                    </div>
+                    <div class="form-group">
+                            <label for="hr-comments" class="label">HR Comments</label>
+                            : <input type="text" name="hr-comments" id="hr-comments" class="form-input col-6">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="form-button btn btn-primary" style="margin-left: 75%;">Submit</button>
+        </form>
+      </div>
+
+
+    <!-- Table Module -->
+ 
+
+
+​  <div class="table-module module" style="margin-left: 30px;margin-right: 30px;">
+  <button class="addProject">Add Project</button>
+  <br>
+  <br>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th id="pname">Request ID</th>
+      <th id="pman">Project Name</th>
+      <th id="projectmanage">Project Manager</th>
+      <th id="resources">No. of Resources- </th>
+      <th id="status">Status -</th>
+      <th id="poc">Point of Contact(POC)</th>
+      <th id="hiring-status">Hiring Status</th>
+      <th id="hr-comments">HR Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+  </tbody>
+</table>
+
+</div>
+​
+</body>
+​
+</html>

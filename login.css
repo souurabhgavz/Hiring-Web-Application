@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+}
+
+#loginForm {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color:  #f0f5f5;
+    padding: 15px;
+
+}
+.login {
+  width: 90%;
+  border-left: 5px solid #800000;
+  border-top-color: #d0e1e1;
+  border-bottom-color:  #d0e1e1;
+  border-right-color:  #d0e1e1
+}
+
+#loginButton{
+	width: 50%;
+	background-color: #4db8ff;
+	border-radius: 15px;
+}
+
+h3{
+ font-family: 'Roboto Condensed', sans-serif;
+ color:  #1aff1a;
+}
+
+h4{
+	font-family: 'Roboto Condensed', sans-serif;
+	color:  #4db8ff
+
+}
+      
