@@ -9,7 +9,7 @@ $(function(){
     "status":"open",
     "poc":"HR-1",
     "hiring-status":"completed",
-    "hr-omments":"ok",
+    "hr-comments":"ok",
     "actions":"done"
   },
   {
@@ -20,7 +20,7 @@ $(function(){
     "status":"open",
     "poc":"HR-2",
     "hiring-status":"completed",
-    "hr-omments":"ok",
+    "hr-comments":"ok",
     "actions":"done"
   },
   {
@@ -31,7 +31,7 @@ $(function(){
     "status":"open",
     "poc":"HR-3",
     "hiring-status":"completed",
-    "hr-omments":"ok",
+    "hr-comments":"ok",
     "actions":"done"
   }
 ];
