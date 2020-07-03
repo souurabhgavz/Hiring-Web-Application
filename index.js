@@ -6,10 +6,10 @@ $(function(){
     "projectName": "Project 1",
     "projectManager": "Manager 1",
     "resources":2,
-    "status":"",
+    "status":"Closed",
     "poc":"HR1",
     "hiringStatus":"Completed",
-    "hrComments":"ok",
+    "hrComments":"Okay",
     "actions":"done"
   },
   {
