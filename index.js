@@ -3,35 +3,35 @@ $(function(){
   var data = [
   {
     "requestId": 1,
-    "projectName": "Proj-1",
-    "projectManager": "Man-1",
+    "projectName": "Project 1",
+    "projectManager": "Manager 1",
     "resources":2,
-    "status":"open",
-    "poc":"HR-1",
-    "hiringStatus":"completed",
+    "status":"",
+    "poc":"HR1",
+    "hiringStatus":"Completed",
     "hrComments":"ok",
     "actions":"done"
   },
   {
     "requestId": 2,
-    "projectName": "Proj-2",
-    "projectManager": "Man-2",
+    "projectName": "Project 2",
+    "projectManager": "Manager 2",
     "resources":10,
-    "status":"open",
-    "poc":"HR-2",
-    "hiringStatus":"completed",
-    "hrComments":"ok",
+    "status":"Open",
+    "poc":"HR2",
+    "hiringStatus":"Pending",
+    "hrComments":"NA",
     "actions":"done"
   },
   {
     "requestId": 3,
-    "projectName": "Proj-3",
-    "projectManager": "Man-3",
+    "projectName": "Project 3",
+    "projectManager": "Manager 3",
     "resources":50,
-    "status":"open",
-    "poc":"HR-3",
-    "hiringStatus":"completed",
-    "hrComments":"ok",
+    "status":"Open",
+    "poc":"HR3",
+    "hiringStatus":"Completed",
+    "hrComments":"Okay",
     "actions":"done"
   }
 ];
