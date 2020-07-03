@@ -96,11 +96,12 @@ $(function(){
 
   function loginSubmit(e){
     var username = $("#username").val();
-    if(username == "admin-man") {
+    var password = $("#password").val();
+    if(username == "admin-man" && password == "admin") {
       sessionStorage.setItem("isManager","true");
       sessionStorage.setItem("isLoggedIn", "true");
     }
-    else if(username=="admin-hr"){
+    else if(username=="admin-hr" && password == "admin"){
       sessionStorage.setItem("isHR","true");
       sessionStorage.setItem("isLoggedIn", "true");
     }
