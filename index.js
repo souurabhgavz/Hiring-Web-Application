@@ -1,4 +1,4 @@
-$(function(){
+
 
   var data = [
   {
@@ -37,18 +37,38 @@ $(function(){
 ];
 
   function editDetails(e){
-    var $req = $(e.target);
-    var reqId = $req.attr("id");
-    console.log("request id: " +  reqId);
 
-    var reqObj = data.filter(o => o.requestId == reqId);
-    console.log({ details: reqObj });
+    var $req = $(e.target);
+    var reqId = $req.attr("id")
+    var trnew="<tr><td colspan='10'>"+$(".details-module").html()+"</td></tr>";
+    $(trnew).insertAfter($req.closest('tr'));
+
+    //var reqObj = data.filter(o => o.requestId == reqId);
+    //console.log({ details: reqObj });
 
     // Add a new row (details module) below the selected row in the table.
 
-  }
+  };
 
-  function hideAll() {
+function appendrow(){
+  for(let i=0;i<data.length;i++)
+  {
+    var txt="<tr>";
+    for(let j=0;j<Object.keys(data[i]).length-1;j++)
+    {
+      txt=txt+"<td>"+String(data[i][Object.keys(data[i])[j]])+"</td>";
+    }
+    txt=txt+'<td id="'+String(data[i]["requestId"])+'" class="edit-action"><i class="fa fa-bars" aria-hidden="true"></i></td>'
+      txt=txt+"</tr>";
+    $(".mytable tbody").append(txt);
+  }
+  $(document).on('click', '.edit-action', editDetails);
+
+};
+
+
+
+function hideAll() {
     $(".module").hide();
   }
 
@@ -75,7 +95,7 @@ $(function(){
           <td>${rowData["poc"]}</td>
           <td>${rowData["hiringStatus"]}</td>
           <td>${rowData["hrComments"]}</td>
-          <td id="${rowData["requestId"]}" class="edit-action"><input type="button" value="Edit"></td>
+          <td id="${rowData["requestId"]}" class="edit-action"><i class="fa fa-bars" aria-hidden="true"></i></td>
         </tr>
       `);
     $(".edit-action").click(editDetails);
@@ -85,14 +105,14 @@ $(function(){
   function showForm() {
     hideAll();
     $(".form-module").show();
-    $(".addProject").click(showForm());
 
 
   }
 
   function showDetails() {
-
-  }
+    hideAll();
+    $(".details-container").show();
+}
 
   function loginSubmit(e){
     var username = $("#username").val();
@@ -114,6 +134,7 @@ $(function(){
 
   $("#loginForm").click(loginSubmit);
 
+
   if ( isLoggedIn() ) {
     showTable();
   } else {
@@ -121,5 +142,6 @@ $(function(){
   }
 
 
+  $("#newRequest").click(showForm);
 
-});
+
